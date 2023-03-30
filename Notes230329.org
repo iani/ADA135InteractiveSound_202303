@@ -1,4 +1,36 @@
 #+TITLE: Notes230329
+
+* PURDUE Online Writing Laboratory
+
 https://owl.purdue.edu/owl/
 https://owl.purdue.edu/owl/avoiding_plagiarism/guide_overview%20.html
 https://owl.purdue.edu/owl/general_writing/academic_writing/paramedic_method.html
+* Chat GPT usage
+
+How to ask chat gpt to correct your english.
+Example:
+
+#+begin_example
+Rewrite the following sentence in standard english "This attempt is being consisted of two deistinct parts. In the Part I (Lithosphere) we are representing earthquakes as points in space and in the Part II we discuss the possibility of sonifying data stream directly from Seismographs."
+#+end_example
+
+
+https://www.merzmail.net/ursonatepdf.pdf
+https://www.youtube.com/watch?v=rs0yapSIRmM
+
+* Shlokas and mudras
+
+-  Asamyukta Hasta Mudras/ Single Hand Gestures with Shloka | Classical Dance lessons part 1
+  https://www.youtube.com/watch?v=d1WT-TsEv9E
+- MOHINIYATTAM MUDRAS by Kalaimamani GOPIKA VARMA
+https://www.youtube.com/watch?v=Z9kb-WgLAAY
+- 24 basic Mudras in Mohiniyattam with shloka (Hastha Lakshana Deepika). learn Indian dance easily!
+ https://www.youtube.com/watch?v=9y4PEEThtI0
+- Mudra Indian Dance - Mohiniyattam - Pataka 2 hands with meaning Samyutha Hastha Viniyoga
+  https://www.youtube.com/watch?v=b4xNfZ_dJkU
+- Mudras and slokas in the Mohiniyattam dance classroom
+ https://www.youtube.com/watch?v=ehZVZj6JsKY
+- Asamyukta Hasta Mudras/ Single Hand Gestures with Shloka | Classical Dance lessons part 1
+https://www.youtube.com/watch?v=d1WT-TsEv9E&t=33s
+- Samyukta Hasta Mudras/ Double Hand Gestures with Shloka | Classical Dance lessons part 2
+https://www.youtube.com/watch?v=RPrubwxITHE
