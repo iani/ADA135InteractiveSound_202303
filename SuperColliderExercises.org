@@ -1,0 +1,41 @@
+#+TITLE: Super Collider Exercises
+
+* Part 1:
+** Write a program that prints "Hello World"
+** Write a program that calculates 2 + 2.
+** Write a program that generates a random number between 0 and 9.
+** Write a program that generates a random number between 10 and 20.
+** Write a program that boots the default server.
+** Write a program that quits (stops) the default server.
+** Write a program that creates a sine tone of frequence 440 and amplitude 0.1
+** Write a statement that stores the sine tone synth from the previous exercise in variable a and then a statement that stops the sound by freeing the synth.
+** Replace the synth stopping statement of the previous exercise, with a synth release statement, to create a fadeout of 5 seconds.
+** Write a program that starts a synth and then releases it after 1 second, using wait to time the statements and fork to create a routine that plays the program.
+** Change the above program so that it produces a sound of random frequency between 400 and 4000 herz.
+** Change the above porgram so that it produces a sound of randtom frequency corresponding to midi MIDI notes 60 to 80.
+** Put the above program in a function, and store it in environment variable =~short_piece=.  Run the function by sending it message =value=.
+** Create a routine that plays a piece of infinite duration by running the above function in a loop, with a wait time of 0.8 seconds.
+** Change the above routine so that the wait time is a random interval between 0.1 and 1.5 seconds.
+** Change the above routine so that the wait time is chosen at random from the numbers 0.1, 0.2, 0.4, 0.5, and 1.0.
+** Change the above program so that the amplitude varies at random between 0.05 and 0.25.
+** Change the above program so that the release times varies at random between 0.01 and 10.0.
+
+* Part 2:
+** Write a program that loads a sound file (wav or aiff) into a buffer, and stores the buffer in environment variable =~buf=.
+** Write a program that plays the buffer =~buf= once.
+** Write a program that plays the buffer =~buf= in a loop.
+** Change the above program so that it playes the buffer backwards.
+** Change the above program so that it plays the buffer with a rate varying continuously at random between 0.2 and 2.0.
+
+* Part 3:
+** Write a program that creates a noise sound.
+** Write a program that filters the noise signal from a sound with a low pass filter.
+** Write a program that filters the noise signal from a sound with a high pass filter.
+** Write a program that filters the noise signal from a sound with a resonant filter.
+** Use an envelope to control the frequency of the resonant filter in the above sound.
+
+* Part 4:
+** Write a program that plays a note of 1 second with the frequency of middle c.
+** Write a program that plays the above note repeatedly every 1 second.
+** Vary the above program so that it plays 3 notes with the frequences of the series c, d, e, once.
+** Vary the above program so that it loops infinitely the series c, d, e.
