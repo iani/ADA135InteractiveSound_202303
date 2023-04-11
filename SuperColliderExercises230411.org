@@ -4,6 +4,15 @@ Many of the exercises below require just a single line of code.
 
 The longer exercises may require no more than 10 lines of code.
 
+* Preliminary requirement
+
+Before doing the exercises below:
+
+1. Download SuperCollider
+2. Study pages 1 to 14 from Bruno Ruviaro's "Gentle Introduction to SuperCollider", Sections "BASICS - 1. Hello World" to 12.1. "Global vs. Local", and practice the instructions in these pages by yourself on SUperCollider.
+
+/N.B. This part may take up to 2 pages.  It is essential that you complete this requirement in order to be able to follow the tutorial in class./
+
 * Part 1:
 ** Write a program that prints "Hello World"
 ** Write a program that calculates 2 + 2.
@@ -11,7 +20,7 @@ The longer exercises may require no more than 10 lines of code.
 ** Write a program that generates a random number between 10 and 20.
 ** Write a program that boots the default server.
 ** Write a program that quits (stops) the default server.
-** Write a program that creates a sine tone of frequence 440 and amplitude 0.1
+** Write a program that creates a sine tone of frequency 440 and amplitude 0.1
 ** Write a statement that stores the sine tone synth from the previous exercise in variable a and then a statement that stops the sound by freeing the synth.
 ** Replace the synth stopping statement of the previous exercise, with a synth release statement, to create a fadeout of 5 seconds.
 ** Write a program that starts a synth and then releases it after 1 second, using wait to time the statements and fork to create a routine that plays the program.
