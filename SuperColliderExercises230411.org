@@ -1,5 +1,9 @@
 #+TITLE: Super Collider Exercises
 
+Many of the exercises below require just a single line of code.
+
+The longer exercises may require no more than 10 lines of code.
+
 * Part 1:
 ** Write a program that prints "Hello World"
 ** Write a program that calculates 2 + 2.
