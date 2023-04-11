@@ -11,7 +11,7 @@ Before doing the exercises below:
 1. Download SuperCollider
 2. Study pages 1 to 14 from Bruno Ruviaro's "Gentle Introduction to SuperCollider", Sections "BASICS - 1. Hello World" to 12.1. "Global vs. Local", and practice the instructions in these pages by yourself on SUperCollider.
 
-/N.B. This part may take up to 2 pages.  It is essential that you complete this requirement in order to be able to follow the tutorial in class./
+/N.B. This part may take up to 2 hours.  It is essential that you complete this requirement in order to be able to follow the tutorial in class./
 
 * Part 1:
 ** Write a program that prints "Hello World"
