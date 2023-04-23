@@ -1,0 +1,39 @@
+#+TITLE: Notes230322
+
+* Discussed today: git, github, markdown, pandoc, terminal
+
+** File naming conventions
+
+Use latin alphanumeric characters and underscore (_) only.
+Include the date of creation of the file in the file name, in YYMMDD format (eg: 230322).
+Use fully descriptive names including your name or initials eg: IZ_assignment1_230322.
+
+** Use Git to store your notes.
+Download git for windows.
+Learn about basic concepts of git:
+- commits
+- repository tree (branches)
+- staging
+- local and remote repositories
+- pulling and pushing
+
+** Recommendation: learn about the terminal, learn basic use of unix terminal.
+
+https://www.wikiwand.com/en/In_the_Beginning..._Was_the_Command_Line
+
+https://web.archive.org/web/20180218045352/http://www.cryptonomicon.com/beginning.html
+
+** Markdown
+
+- Write your notes in markdown format (.md). https://www.markdownguide.org/cheat-sheet/ https://www.markdownguide.org/
+- Text can include links to pictures in jpg or png format.
+
+** Submitting audio and video media.
+
+Submit audio or video files using WeTransfer.
+
+* Further reading
+
+Following notes from an undergraduate class contain some interesting links and references:
+
+https://github.com/iani/AUD821AlgorithmicComposition2023
