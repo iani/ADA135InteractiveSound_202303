@@ -1,0 +1,47 @@
+#+TITLE: Notes230502_sc
+
+* Anatomy of the supercollider server (scserve).
+
+** Synth:
+Synth is a basic unit producing a sound.  It is a process, and as long as it runs it produces sound.
+
+A synth is made up of UGens.
+
+** UGen:
+UGen or Unit generator is a basic component that lives inside a synth and does the sound processing needed. It can generate or modify sound signals.
+Examples of Unit generators are:
+    SinOsc = Sine generator
+    Pulse = Rectangle wave generator
+    WhiteNoise = White Noise generator
+    ...
+
+One could compare UGens to generators of analog synthesizers.
+
+There are 1120 UGens in supercollider, including plugins, as of  2 May 2023 20:41
+
+To make a synth, one combines a number of UGens so that the output of one ugen is processed by another Ugen, etc.  This is called a *UGen graph*.
+
+** SynthDef
+
+A SynthDef defines the UGen graph for making synths.  So it defines the structure of the synthesis that produces the sound.
+
+A Synth is made by telling first what synthdef it should use:
+Synth(\default);
+
+You can make new SynthDefs at any time during programming or playing a piece.  You must load it to the server first in order to use it.
+
+Usually there are more than 100 synthdefs already loaded in SuperCollider server.
+You can find the names of the currently loaded SynthDefs out by writing this:
+
+#+begin_src sclang
+SynthDescLib.global.synthDescs.keys.asArray.sort do: _.postln;
+#+end_src
+
+The default maximum number of SynthDefs is 1024. But you can make the server accept more than 1024 SynthDef.
+** Buffer
+
+Buffers are usually used to store sound signals.  A buffer contains the frames of a sound signal as numbers.  A frame contains as many numbers as there are channels in the sound.
+** Busses
+** Groups
+
+** OutputProxies (signals inside a Synth)

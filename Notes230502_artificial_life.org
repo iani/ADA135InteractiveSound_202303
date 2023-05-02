@@ -1,0 +1,29 @@
+#+TITLE: Notes230502
+
+Stephen Wolfram:
+A new kind of science.
+
+Turing Completeness.
+Game of life
+Rule 110
+
+https://www.youtube.com/results?search_query=wolfram+rule+110
+
+https://golly.sourceforge.net/
+
+Artificial Life
+Complexity theory
+
+https://www.santafe.edu/
+
+Christa Sommerer and Laurent Mignonneau
+https://zkm.de/en/person/laurent-mignonneau
+
+Nathaniel Virgo, ELSI
+https://www.youtube.com/watch?v=v9sDd6fNjq8
+
+
+SC Tweets
+https://supercollider.github.io/sc-140.html
+
+https://sccode.org/search?q=sc140
