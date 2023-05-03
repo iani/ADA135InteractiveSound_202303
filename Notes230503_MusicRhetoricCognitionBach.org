@@ -20,9 +20,10 @@ Deleuze:
  - Leibnitz
 ---
 
-Neal Stephenson : The Baroque Cycle
-Neal Stephenson : Anathem (The Clock of the Long Now)
-Neal Stephenson : *Snowcrash*
+Neal Stephenson :
+- The Baroque Cycle
+- Anathem (The Clock of the Long Now)
+- *Snowcrash*
 
 ---
 
@@ -34,7 +35,9 @@ Recommended starting points for study:
 Recommended blog and videos for inspiration and insight :
 
 Jaremy Denk's https://www.jeremydenk.com/blog
+
 Especially the older entries:
+
 Think Denk: https://blog.jeremydenk.com/
 
 Jeremy Denk's youtube video's on Bach:
