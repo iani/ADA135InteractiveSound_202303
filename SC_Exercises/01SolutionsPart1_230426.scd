@@ -110,12 +110,12 @@ a release: 5;
 	};
 }.fork;
 //: 16 Change the above program so that the amplitude varies at
-// random between 0.05 and 0.25.
+// random between 0.05 and 0.1.
 {
 	var short_piece;
 	short_piece = {
 		var synth;
-		synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.05 rrand: 0.25) }.play;
+		synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.05 rrand: 0.1) }.play;
 		1.wait;
 		synth.release;
 	};
@@ -124,15 +124,16 @@ a release: 5;
 		[0.1, 0.2, 0.4, 0.5, 1.0].choose.wait;
 	};
 }.fork
-//: FOLLOWING NEED DEBUGGING:
-//: Debug
+//: Debuged  3 May 2023 08:31
 {
 	var short_piece;
 	short_piece = {
-		var synth;
-		synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.05 rrand: 0.25) }.play;
-		1.wait;
-		synth.release(3);
+		{
+			var synth;
+			synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.05 rrand: 0.1) }.play;
+			1.wait;
+			synth.release(0.3);
+		}.fork
 	};
 	loop {
 		short_piece.value;
@@ -145,10 +146,12 @@ a release: 5;
 {
 	var short_piece;
 	short_piece = {
-		var synth;
-		synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.05 rrand: 0.25) }.play;
-		1.wait;
-		synth.release(0.01 rrand: 10.0);
+		{
+			var synth;
+			synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.05 rrand: 0.1) }.play;
+			1.wait;
+			synth.release(0.01 rrand: 10.0);
+		}.fork;
 	};
 	loop {
 		short_piece.value;
