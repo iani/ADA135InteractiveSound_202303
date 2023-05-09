@@ -10,3 +10,5 @@ n rand produces a random number between 0 and n-1, when n is an integer.
 3.rand;
 //:Write an expression that produces a random number, either 3 or 4, using rand (not rrand)
 2.rand + 3;
+//:If the receiver is a float, then the result is a float:
+10.0.rand;

@@ -1,5 +1,8 @@
 #+TITLE: Notes230502_sc
 
+scsynth - the SuperCollider server is an independent application that processes sound.
+It is a digital sound synthesis program that simulates sound synthesis and processing.
+
 * Anatomy of the supercollider server (scserve).
 
 ** Synth:
@@ -15,11 +18,21 @@ Examples of Unit generators are:
     WhiteNoise = White Noise generator
     ...
 
+ ___.___.___
+|___________.|
+
+#+begin_src sclang
+a = { PlayBuf.ar(................) }
+#+end_src
+
+
 One could compare UGens to generators of analog synthesizers.
 
 There are 1120 UGens in supercollider, including plugins, as of  2 May 2023 20:41
 
 To make a synth, one combines a number of UGens so that the output of one ugen is processed by another Ugen, etc.  This is called a *UGen graph*.
+
+
 
 ** SynthDef
 
