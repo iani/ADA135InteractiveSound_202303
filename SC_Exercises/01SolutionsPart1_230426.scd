@@ -148,13 +148,33 @@ a release: 5;
 	short_piece = {
 		{
 			var synth;
-			synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.05 rrand: 0.1) }.play;
+			synth = { SinOsc.ar(60.rrand(80).midicps, 0, 0.01 rrand: 0.05) }.play;
 			1.wait;
-			synth.release(0.01 rrand: 10.0);
+			synth.release(0.01 exprand: 5.0);
 		}.fork;
 	};
 	loop {
 		short_piece.value;
-		[0.1, 0.2, 0.4, 0.5, 1.0].choose.wait;
+		exprand(0.1, 1.0).wait;
+		// [0.1, 0.2, 0.4, 0.5, 1.0].choose.wait;
+	};
+}.fork;
+//: Exercise: Add more variations.
+{
+	var short_piece;
+	short_piece = {
+		{
+			var synth;
+			synth = {
+				[SinOsc, LFSaw].choose
+				.ar(60.rrand(80).midicps, 0, 0.01 rrand: 0.05) }.play;
+			1.wait;
+			synth.release(0.01 exprand: 5.0);
+		}.fork;
+	};
+	loop {
+		short_piece.value;
+		exprand(0.1, 1.0).wait;
+		// [0.1, 0.2, 0.4, 0.5, 1.0].choose.wait;
 	};
 }.fork;
