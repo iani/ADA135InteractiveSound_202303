@@ -19,6 +19,32 @@ FileDialog({ | p | ~folder = p[0] }, fileMode: 2)
 //:
 ~buffers.first.play;
 //:
+~buffers[1].play;
+~buffers[2].play;
+//:
+{
+	~buffers do: { | p |
+		p.play;
+		1.5.wait;
+	};
+}.fork;
+//:
+r = {
+	Server.default.record;
+	1.wait;
+	~buffers[0].play;
+	1.wait;
+	~buffers[2].play;
+	0.75.wait;
+	~buffers[0].play;
+	1.wait;
+	~buffers[2].play;
+	0.75.wait;
+	{ PlayBuf.ar(1, ~buffers[4], 0.5) }.play;
+	5.wait;
+	Server.default.stopRecording;
+}.fork;
+//: loop inside the score.
 r = {
 	Server.default.record;
 	1.wait;
@@ -31,11 +57,57 @@ r = {
 	~buffers[2].play;
 	0.75.wait;
 	{ PlayBuf.ar(1, ~buffers[3], 2) }.play;
+	0.25;
+	~buffers[2..].reverse do: { | b |
+		b.postln;
+		{ PlayBuf.ar(1, b, 1) }.play;
+		1.5.wait;
+	};
 	5.wait;
 	Server.default.stopRecording;
 }.fork;
 //:
+{
+	~buffers[2..].reverse do: { | b |
+		b.postln;
+		{ PlayBuf.ar(1, b, -2.0, 1, b.numFrames) }.play;
+		1.5.wait;
+	};
 
+}.fork;
+//:
+{
+	~buffers[2..].reverse do: { | b |
+		b.postln;
+		{ PlayBuf.ar(1, b, -2.0, loop: 1) }.play;
+		1.5.wait;
+	};
+
+}.fork;
+//:
+{
+	~buffers[2..].reverse do: { | b |
+		b.postln;
+		{ PlayBuf.ar(1, b,
+			LFNoise0.kr(5.reciprocal).range(-3, -0.3)
+			, loop: 1) }.play;
+		1.5.wait;
+	};
+
+}.fork;
+//:
+{
+	~buffers[2..].reverse do: { | b |
+		b.postln;
+		{ PlayBuf.ar(1, b,
+			LFNoise1.kr(9.reciprocal).range(-3, -0.3)
+			, loop: 1) }.play;
+		1.5.wait;
+	};
+
+}.fork;
+//:
+~buffers[2..].reverse;
 //:
 
 //: Loading buffers:
